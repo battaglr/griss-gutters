@@ -1,0 +1,24 @@
+# OS
+._*
+.DS_Store
+Thumbs.db
+
+# Editor
+*.sublime*
+*.swo
+*.swp
+.cache
+.idea
+.project
+.settings
+.tmproj
+
+# Packages
+node_modules
+
+# Others
+*.diff
+*.err
+*.log
+*.orig
+*.rej

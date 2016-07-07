@@ -1,0 +1,84 @@
+////
+// Griss gutters
+// v0.1.0 | MIT
+//
+
+// Settings
+// ---------------------------------------------------------------- //
+
+// Gutters
+// -------------------------------------------- //
+
+$griss-gutters: (
+  none: (
+    keyword: 'n',
+    value: 0
+  ),
+  small: (
+    keyword: 's',
+    value: 5px
+  ),
+  medium: (
+    keyword: 'm',
+    value: 10px
+  ),
+  large: (
+    keyword: 'l',
+    value: 15px
+  ),
+  extra-large: (
+    keyword: 'xl',
+    value: 20px
+  )
+) !default;
+
+// Breakpoints
+// -------------------------------------------- //
+
+$griss-breakpoints: (
+  small: (
+    keyword: 's',
+    value: 30em
+  ),
+  medium: (
+    keyword: 'm',
+    value: 48em
+  ),
+  large: (
+    keyword: 'l',
+    value: 64em
+  )
+) !default;
+
+// Gutters
+// ---------------------------------------------------------------- //
+
+@each $gutters, $gutter in $griss-gutters {
+  $value: map-get($gutter, value);
+  $zero: if($value != 0, 0, null);
+
+  .Grid--gutter\(#{map-get($gutter, keyword)}\) {
+    margin: $zero ($value) * -1;
+
+    > .Grid-cell {
+      padding: $zero $value;
+    }
+  }
+}
+
+@each $breakpoints, $breakpoint in $griss-breakpoints {
+  @media (min-width: map-get($breakpoint, value)) {
+    @each $gutters, $gutter in $griss-gutters {
+      $value: map-get($gutter, value);
+      $zero: if($value != 0, 0, null);
+
+      .Grid--gutter\(#{map-get($gutter, keyword)}\)\@#{map-get($breakpoint, keyword)} {
+        margin: $zero ($value) * -1;
+
+        > .Grid-cell {
+          padding: $zero $value;
+        }
+      }
+    }
+  }
+}

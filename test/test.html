@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Griss gutters v0.1.0</title>
+  <link href="modules/griss.min.css" rel="stylesheet" />
+  <link href="modules/griss-cells.min.css" rel="stylesheet" />
+  <link href="../dist/griss-gutters.min.css" rel="stylesheet" />
+  <link href="test.css" rel="stylesheet" />
+</head>
+<body>
+
+  <h1>Griss gutters v0.1.0</h1>
+
+  <p>Test for canonical distribution.</p>
+
+  <h2>No gutter — applies always</h2>
+
+  <div class="Grid Grid--gutter(n) / Test">
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(n) / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(n) / Test">
+    <div class="Grid-cell">
+      <span class="Test-placeholder">
+        1
+      </span>
+    </div>
+  </div>
+
+  <h2>Small gutter — applies always</h2>
+
+  <div class="Grid Grid--gutter(s) / Test">
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(s) / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(s) / Test">
+    <div class="Grid-cell">
+      <span class="Test-placeholder">
+        1
+      </span>
+    </div>
+  </div>
+
+  <h2>Medium (default) gutter — applies always</h2>
+
+  <div class="Grid Grid--gutter(m) / Test">
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(m) / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(m) / Test">
+    <div class="Grid-cell">
+      <span class="Test-placeholder">
+        1
+      </span>
+    </div>
+  </div>
+
+  <h2>Large gutter — applies always</h2>
+
+  <div class="Grid Grid--gutter(l) / Test">
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(l) / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(l) / Test">
+    <div class="Grid-cell">
+      <span class="Test-placeholder">
+        1
+      </span>
+    </div>
+  </div>
+
+  <h2>Extra-large gutter — applies always</h2>
+
+  <div class="Grid Grid--gutter(xl) / Test">
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(xl) / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(xl) / Test">
+    <div class="Grid-cell">
+      <span class="Test-placeholder">
+        1
+      </span>
+    </div>
+  </div>
+
+  <h2>Large gutter on small breakpoint — applies when width ≥ <code>`30em`</code> (~<code>`480px`</code>)</h2>
+
+  <div class="Grid Grid--gutter(l)@s / Test">
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(l)@s / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(l)@s / Test">
+    <div class="Grid-cell">
+      <span class="Test-placeholder">
+        1
+      </span>
+    </div>
+  </div>
+
+  <h2>No gutter on medium breakpoint — applies when width ≥ <code>`48em`</code> (~<code>`768px`</code>)</h2>
+
+  <div class="Grid Grid--gutter(n)@m / Test">
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(n)@m / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(n)@m / Test">
+    <div class="Grid-cell">
+      <span class="Test-placeholder">
+        1
+      </span>
+    </div>
+  </div>
+
+  <h2>Small on large breakpoint — applies when width ≥ <code>`64em`</code> (~<code>`1024px`</code>)</h2>
+
+  <div class="Grid Grid--gutter(s)@l / Test">
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(s)@l / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+    </div>
+  </div>
+  <div class="Grid Grid--gutter(s)@l / Test">
+    <div class="Grid-cell">
+      <span class="Test-placeholder">
+        1
+      </span>
+    </div>
+  </div>
+
+  <h2>Small gutter and nested grid — applies always</h2>
+
+  <div class="Grid Grid--gutter(s) / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+      <div class="Grid / Test">
+        <div class="Grid-cell Grid-cell--size(1/3)">
+          <span class="Test-placeholder">
+            1/3
+          </span>
+        </div>
+        <div class="Grid-cell Grid-cell--size(1/3)">
+          <span class="Test-placeholder">
+            1/3
+          </span>
+        </div>
+        <div class="Grid-cell Grid-cell--size(1/3)">
+          <span class="Test-placeholder">
+            1/3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+      <div class="Grid / Test">
+        <div class="Grid-cell">
+          <span class="Test-placeholder">
+            1
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Large gutter with nested grid of small gutter — applies always</h2>
+
+  <div class="Grid Grid--gutter(l) / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+      <div class="Grid Grid--gutter(s) / Test">
+        <div class="Grid-cell Grid-cell--size(1/3)">
+          <span class="Test-placeholder">
+            1/3
+          </span>
+        </div>
+        <div class="Grid-cell Grid-cell--size(1/3)">
+          <span class="Test-placeholder">
+            1/3
+          </span>
+        </div>
+        <div class="Grid-cell Grid-cell--size(1/3)">
+          <span class="Test-placeholder">
+            1/3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+      <div class="Grid Grid--gutter(s) / Test">
+        <div class="Grid-cell">
+          <span class="Test-placeholder">
+            1
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Small gutter with nested grid of large gutter with nested grid of no gutter — applies always</h2>
+
+  <div class="Grid Grid--gutter(s) / Test">
+    <div class="Grid-cell Grid-cell--size(2/3)">
+      <span class="Test-placeholder">
+        2/3
+      </span>
+      <div class="Grid Grid--gutter(l) / Test">
+        <div class="Grid-cell Grid-cell--size(1/2)">
+          <span class="Test-placeholder">
+            1/2
+          </span>
+          <div class="Grid Grid--gutter(n) / Test">
+            <div class="Grid-cell Grid-cell--size(1/2)">
+              <span class="Test-placeholder">
+                1/2
+              </span>
+            </div>
+            <div class="Grid-cell Grid-cell--size(1/2)">
+              <span class="Test-placeholder">
+                1/2
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell Grid-cell--size(1/2)">
+          <span class="Test-placeholder">
+            1/2
+          </span>
+          <div class="Grid Grid--gutter(n) / Test">
+            <div class="Grid-cell Grid-cell--size(1/2)">
+              <span class="Test-placeholder">
+                1/2
+              </span>
+            </div>
+            <div class="Grid-cell Grid-cell--size(1/2)">
+              <span class="Test-placeholder">
+                1/2
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Grid-cell Grid-cell--size(1/3)">
+      <span class="Test-placeholder">
+        1/3
+      </span>
+      <div class="Grid Grid--gutter(l) / Test">
+        <div class="Grid-cell">
+          <span class="Test-placeholder">
+            1
+          </span>
+          <div class="Grid Grid--gutter(n) / Test">
+            <div class="Grid-cell Grid-cell--size(1/2)">
+              <span class="Test-placeholder">
+                1/2
+              </span>
+            </div>
+            <div class="Grid-cell Grid-cell--size(1/2)">
+              <span class="Test-placeholder">
+                1/2
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <small>© 2016, Luciano Battagliero. Released under the MIT license.</small>
+
+</body>
+</html>

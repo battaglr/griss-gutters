@@ -1,6 +1,6 @@
 {
   "name": "griss-gutters",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Gutters module for Griss",
   "author": "Luciano Battagliero",
   "license": "MIT",
@@ -18,14 +18,14 @@
     "dist"
   ],
   "dependencies": {
-    "griss": "1.0.0"
+    "griss": "1.0.1"
   },
   "devDependencies": {
     "bannerize": "1.0.2",
     "csso": "1.8.2",
     "gzip-size-cli": "1.0.0",
     "node-sass": "3.8.0",
-    "griss-cells": "0.1.1"
+    "griss-cells": "1.0.0"
   },
   "scripts": {
     "build": "node-sass --output-style expanded src/griss-gutters.scss dist/griss-gutters.css",

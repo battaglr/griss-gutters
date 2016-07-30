@@ -1,142 +1,142 @@
 /*!
- * Griss gutters v1.0.0
+ * Griss gutters v2.0.0
  * MIT
  */
-.Grid--gutter\(n\) {
-  margin: 0;
+.gs-Grid--gutter\(n\) {
+  margin-left: 0;
 }
 
-.Grid--gutter\(n\) > .Grid-cell {
-  padding: 0;
+.gs-Grid--gutter\(n\) > .gs-Grid-cell {
+  padding-left: 0;
 }
 
-.Grid--gutter\(s\) {
-  margin: 0 -5px;
+.gs-Grid--gutter\(s\) {
+  margin-left: -10px;
 }
 
-.Grid--gutter\(s\) > .Grid-cell {
-  padding: 0 5px;
+.gs-Grid--gutter\(s\) > .gs-Grid-cell {
+  padding-left: 10px;
 }
 
-.Grid--gutter\(m\) {
-  margin: 0 -10px;
+.gs-Grid--gutter\(m\) {
+  margin-left: -20px;
 }
 
-.Grid--gutter\(m\) > .Grid-cell {
-  padding: 0 10px;
+.gs-Grid--gutter\(m\) > .gs-Grid-cell {
+  padding-left: 20px;
 }
 
-.Grid--gutter\(l\) {
-  margin: 0 -15px;
+.gs-Grid--gutter\(l\) {
+  margin-left: -30px;
 }
 
-.Grid--gutter\(l\) > .Grid-cell {
-  padding: 0 15px;
+.gs-Grid--gutter\(l\) > .gs-Grid-cell {
+  padding-left: 30px;
 }
 
-.Grid--gutter\(xl\) {
-  margin: 0 -20px;
+.gs-Grid--gutter\(xl\) {
+  margin-left: -40px;
 }
 
-.Grid--gutter\(xl\) > .Grid-cell {
-  padding: 0 20px;
+.gs-Grid--gutter\(xl\) > .gs-Grid-cell {
+  padding-left: 40px;
 }
 
 @media (min-width: 30em) {
-  .Grid--gutter\(n\)\@s {
-    margin: 0;
+  .gs-Grid--gutter\(n\)\@s {
+    margin-left: 0;
   }
-  .Grid--gutter\(n\)\@s > .Grid-cell {
-    padding: 0;
+  .gs-Grid--gutter\(n\)\@s > .gs-Grid-cell {
+    padding-left: 0;
   }
-  .Grid--gutter\(s\)\@s {
-    margin: 0 -5px;
+  .gs-Grid--gutter\(s\)\@s {
+    margin-left: -10px;
   }
-  .Grid--gutter\(s\)\@s > .Grid-cell {
-    padding: 0 5px;
+  .gs-Grid--gutter\(s\)\@s > .gs-Grid-cell {
+    padding-left: 10px;
   }
-  .Grid--gutter\(m\)\@s {
-    margin: 0 -10px;
+  .gs-Grid--gutter\(m\)\@s {
+    margin-left: -20px;
   }
-  .Grid--gutter\(m\)\@s > .Grid-cell {
-    padding: 0 10px;
+  .gs-Grid--gutter\(m\)\@s > .gs-Grid-cell {
+    padding-left: 20px;
   }
-  .Grid--gutter\(l\)\@s {
-    margin: 0 -15px;
+  .gs-Grid--gutter\(l\)\@s {
+    margin-left: -30px;
   }
-  .Grid--gutter\(l\)\@s > .Grid-cell {
-    padding: 0 15px;
+  .gs-Grid--gutter\(l\)\@s > .gs-Grid-cell {
+    padding-left: 30px;
   }
-  .Grid--gutter\(xl\)\@s {
-    margin: 0 -20px;
+  .gs-Grid--gutter\(xl\)\@s {
+    margin-left: -40px;
   }
-  .Grid--gutter\(xl\)\@s > .Grid-cell {
-    padding: 0 20px;
+  .gs-Grid--gutter\(xl\)\@s > .gs-Grid-cell {
+    padding-left: 40px;
   }
 }
 
 @media (min-width: 48em) {
-  .Grid--gutter\(n\)\@m {
-    margin: 0;
+  .gs-Grid--gutter\(n\)\@m {
+    margin-left: 0;
   }
-  .Grid--gutter\(n\)\@m > .Grid-cell {
-    padding: 0;
+  .gs-Grid--gutter\(n\)\@m > .gs-Grid-cell {
+    padding-left: 0;
   }
-  .Grid--gutter\(s\)\@m {
-    margin: 0 -5px;
+  .gs-Grid--gutter\(s\)\@m {
+    margin-left: -10px;
   }
-  .Grid--gutter\(s\)\@m > .Grid-cell {
-    padding: 0 5px;
+  .gs-Grid--gutter\(s\)\@m > .gs-Grid-cell {
+    padding-left: 10px;
   }
-  .Grid--gutter\(m\)\@m {
-    margin: 0 -10px;
+  .gs-Grid--gutter\(m\)\@m {
+    margin-left: -20px;
   }
-  .Grid--gutter\(m\)\@m > .Grid-cell {
-    padding: 0 10px;
+  .gs-Grid--gutter\(m\)\@m > .gs-Grid-cell {
+    padding-left: 20px;
   }
-  .Grid--gutter\(l\)\@m {
-    margin: 0 -15px;
+  .gs-Grid--gutter\(l\)\@m {
+    margin-left: -30px;
   }
-  .Grid--gutter\(l\)\@m > .Grid-cell {
-    padding: 0 15px;
+  .gs-Grid--gutter\(l\)\@m > .gs-Grid-cell {
+    padding-left: 30px;
   }
-  .Grid--gutter\(xl\)\@m {
-    margin: 0 -20px;
+  .gs-Grid--gutter\(xl\)\@m {
+    margin-left: -40px;
   }
-  .Grid--gutter\(xl\)\@m > .Grid-cell {
-    padding: 0 20px;
+  .gs-Grid--gutter\(xl\)\@m > .gs-Grid-cell {
+    padding-left: 40px;
   }
 }
 
 @media (min-width: 64em) {
-  .Grid--gutter\(n\)\@l {
-    margin: 0;
+  .gs-Grid--gutter\(n\)\@l {
+    margin-left: 0;
   }
-  .Grid--gutter\(n\)\@l > .Grid-cell {
-    padding: 0;
+  .gs-Grid--gutter\(n\)\@l > .gs-Grid-cell {
+    padding-left: 0;
   }
-  .Grid--gutter\(s\)\@l {
-    margin: 0 -5px;
+  .gs-Grid--gutter\(s\)\@l {
+    margin-left: -10px;
   }
-  .Grid--gutter\(s\)\@l > .Grid-cell {
-    padding: 0 5px;
+  .gs-Grid--gutter\(s\)\@l > .gs-Grid-cell {
+    padding-left: 10px;
   }
-  .Grid--gutter\(m\)\@l {
-    margin: 0 -10px;
+  .gs-Grid--gutter\(m\)\@l {
+    margin-left: -20px;
   }
-  .Grid--gutter\(m\)\@l > .Grid-cell {
-    padding: 0 10px;
+  .gs-Grid--gutter\(m\)\@l > .gs-Grid-cell {
+    padding-left: 20px;
   }
-  .Grid--gutter\(l\)\@l {
-    margin: 0 -15px;
+  .gs-Grid--gutter\(l\)\@l {
+    margin-left: -30px;
   }
-  .Grid--gutter\(l\)\@l > .Grid-cell {
-    padding: 0 15px;
+  .gs-Grid--gutter\(l\)\@l > .gs-Grid-cell {
+    padding-left: 30px;
   }
-  .Grid--gutter\(xl\)\@l {
-    margin: 0 -20px;
+  .gs-Grid--gutter\(xl\)\@l {
+    margin-left: -40px;
   }
-  .Grid--gutter\(xl\)\@l > .Grid-cell {
-    padding: 0 20px;
+  .gs-Grid--gutter\(xl\)\@l > .gs-Grid-cell {
+    padding-left: 40px;
   }
 }

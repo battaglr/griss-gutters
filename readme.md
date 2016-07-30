@@ -11,7 +11,7 @@ the size at different screen widths.
 Key features:
 
 - Responsive and mobile-first.
-- Lightweight (~277 bytes minified and gzipped).
+- Lightweight (~287 bytes minified and gzipped).
 - Extensible using the different
   [available modules](https://github.com/battaglr/griss/#available-modules)
   or your own code.
@@ -39,26 +39,22 @@ it into your project:
 *Make sure you have read
 [Griss core documentation](https://github.com/battaglr/griss/#usage) first.*
 
-Combine the base grid class —`Grid`— with the class that defines the gutter
-size that you need for your content —i.e. `Grid--gutter(s)`.
+Combine the base grid class —`gs-Grid`— with the class that defines the gutter
+size that you need for your content —i.e. `gs-Grid--gutter(s)`.
 
 To define the gutter size of each grid you can choose from five different
 options:
 
 - *None* represented as `n` for no gutter.
-- *Small* represented as `s` for a gutter of `5px`.
-- *Medium* represented as `m` for a gutter of `10px`.
-- *Large* represented as `l` for a gutter of `15px`.
-- *Extra large* represented as `xl` for a gutter of `20px`.
+- *Small* represented as `s` for a gutter of `10px`.
+- *Medium* represented as `m` for a gutter of `20px`.
+- *Large* represented as `l` for a gutter of `30px`.
+- *Extra large* represented as `xl` for a gutter of `40px`.
 
-Using only the base grid class the default gutter will be of `10px`.
+Using only the base grid class the default gutter will be of `20px`.
 
 If you need to make adjustments at different screen widths use any of the
-available breakpoint suffixes: `@s`, `@m` and `@l` —i.e. `Grid--gutter(s)@m`.
-
-*To avoid horizontal scrolling, always compensate the gutter size of the grid
-by applying `padding` to its parent element or by setting the `overflow` as
-`hidden`.*
+available breakpoint suffixes: `@s`, `@m` and `@l` —i.e. `gs-Grid--gutter(s)@m`.
 
 #### Examples
 
@@ -67,31 +63,31 @@ Some basic examples:
 - A grid with no gutter:
 
   ```html
-  <div class="Grid Grid--gutter(n)">
-    <div class="Grid-cell"> ... </div>
-    <div class="Grid-cell"> ... </div>
+  <div class="gs-Grid gs-Grid--gutter(n)">
+    <div class="gs-Grid-cell"> ... </div>
+    <div class="gs-Grid-cell"> ... </div>
   </div>
   ```
 
 - A grid using different gutter sizes at different breakpoints:
 
   ```html
-  <div class="Grid Grid--gutter(s)@s Grid--gutter(m)@l">
-    <div class="Grid-cell"> ... </div>
-    <div class="Grid-cell"> ... </div>
+  <div class="gs-Grid gs-Grid--gutter(s)@s gs-Grid--gutter(m)@l">
+    <div class="gs-Grid-cell"> ... </div>
+    <div class="gs-Grid-cell"> ... </div>
   </div>
   ```
 
 - A grid and a nested grid using different gutter sizes:
 
   ```html
-  <div class="Grid Grid--gutter(m)">
-    <div class="Grid-cell"> ... </div>
-    <div class="Grid-cell">
+  <div class="gs-Grid gs-Grid--gutter(m)">
+    <div class="gs-Grid-cell"> ... </div>
+    <div class="gs-Grid-cell">
       ...
-      <div class="Grid Grid--gutter(l)">
-        <div class="Grid-cell"> ... </div>
-        <div class="Grid-cell"> ... </div>
+      <div class="gs-Grid gs-Grid--gutter(l)">
+        <div class="gs-Grid-cell"> ... </div>
+        <div class="gs-Grid-cell"> ... </div>
       </div>
     </div>
   </div>
@@ -104,17 +100,17 @@ For more examples, please check out the
 
 ##### Base
 
-- `Grid--gutter(n)`
-- `Grid--gutter(s)`
-- `Grid--gutter(m)`
-- `Grid--gutter(l)`
-- `Grid--gutter(xl)`
+- `gs-Grid--gutter(n)`
+- `gs-Grid--gutter(s)`
+- `gs-Grid--gutter(m)`
+- `gs-Grid--gutter(l)`
+- `gs-Grid--gutter(xl)`
 
 ##### Breakpoints
 
-- `Grid--gutter(sz)@s`
-- `Grid--gutter(sz)@m`
-- `Grid--gutter(sz)@l`
+- `gs-Grid--gutter(sz)@s`
+- `gs-Grid--gutter(sz)@m`
+- `gs-Grid--gutter(sz)@l`
 
 *`sz` should be replaced with an available size.*
 

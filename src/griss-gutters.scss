@@ -56,10 +56,10 @@ $griss-breakpoints: (
 @each $gutters, $gutter in $griss-gutters {
   $value: map-get($gutter, value);
 
-  .Grid--gutter\(#{map-get($gutter, keyword)}\) {
+  .gs-Grid--gutter\(#{map-get($gutter, keyword)}\) {
     margin-left: $value * -1;
 
-    > .Grid-cell {
+    > .gs-Grid-cell {
       padding-left: $value;
     }
   }
@@ -70,10 +70,10 @@ $griss-breakpoints: (
     @each $gutters, $gutter in $griss-gutters {
       $value: map-get($gutter, value);
 
-      .Grid--gutter\(#{map-get($gutter, keyword)}\)\@#{map-get($breakpoint, keyword)} {
+      .gs-Grid--gutter\(#{map-get($gutter, keyword)}\)\@#{map-get($breakpoint, keyword)} {
         margin-left: $value * -1;
 
-        > .Grid-cell {
+        > .gs-Grid-cell {
           padding-left: $value;
         }
       }

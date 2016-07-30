@@ -16,19 +16,19 @@ $griss-gutters: (
   ),
   small: (
     keyword: 's',
-    value: 5px
+    value: 10px
   ),
   medium: (
     keyword: 'm',
-    value: 10px
+    value: 20px
   ),
   large: (
     keyword: 'l',
-    value: 15px
+    value: 30px
   ),
   extra-large: (
     keyword: 'xl',
-    value: 20px
+    value: 40px
   )
 ) !default;
 
@@ -55,13 +55,12 @@ $griss-breakpoints: (
 
 @each $gutters, $gutter in $griss-gutters {
   $value: map-get($gutter, value);
-  $zero: if($value != 0, 0, null);
 
   .Grid--gutter\(#{map-get($gutter, keyword)}\) {
-    margin: $zero ($value) * -1;
+    margin-left: $value * -1;
 
     > .Grid-cell {
-      padding: $zero $value;
+      padding-left: $value;
     }
   }
 }
@@ -70,13 +69,12 @@ $griss-breakpoints: (
   @media (min-width: map-get($breakpoint, value)) {
     @each $gutters, $gutter in $griss-gutters {
       $value: map-get($gutter, value);
-      $zero: if($value != 0, 0, null);
 
       .Grid--gutter\(#{map-get($gutter, keyword)}\)\@#{map-get($breakpoint, keyword)} {
-        margin: $zero ($value) * -1;
+        margin-left: $value * -1;
 
         > .Grid-cell {
-          padding: $zero $value;
+          padding-left: $value;
         }
       }
     }
